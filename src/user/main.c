@@ -1,5 +1,5 @@
 #include "board.h"
-#include "rtthread.h"
+#include <rtthread.h>
 #include "led.h"
 
 int main()

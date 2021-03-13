@@ -15,6 +15,7 @@
 #include <rtthread.h>
 #include "stm32f10x.h"
 #include "led.h"
+#include "usart.h"
 // #include "stm32mp1xx.h"
 // #include "stm32mp1xx_hal.h"
 // #include "drv_common.h"

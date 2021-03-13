@@ -2,6 +2,8 @@
     "files.associations": {
         "board.h": "c",
         "stm32f10x.h": "c",
-        "led.h": "c"
+        "led.h": "c",
+        "rtthread.h": "c",
+        "usart.h": "c"
     }
 }

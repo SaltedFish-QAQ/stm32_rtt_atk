@@ -78,6 +78,8 @@ void rt_hw_board_init()
 
     /* 初始化led硬件 */
     LED_GPIO_Config();
+    /* 初始化串口模块硬件，波特率为115200 */
+    USART_Config();
 #if 0
     //测试硬件是否工作
     GPIO_ResetBits(GPIOB, GPIO_Pin_5);
