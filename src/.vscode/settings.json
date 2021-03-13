@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "board.h": "c",
+        "stm32f10x.h": "c",
+        "led.h": "c"
+    }
+}

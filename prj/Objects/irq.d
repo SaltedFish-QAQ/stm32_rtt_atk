@@ -1,0 +1,10 @@
+.\objects\irq.o: ..\src\rt_thread\src\irq.c
+.\objects\irq.o: ..\src\rt_thread\include\rthw.h
+.\objects\irq.o: ..\src\rt_thread\include\rtthread.h
+.\objects\irq.o: ..\src\rt_thread\bsp\rtconfig.h
+.\objects\irq.o: ..\src\rt_thread\include\rtdebug.h
+.\objects\irq.o: ..\src\rt_thread\include\rtdef.h
+.\objects\irq.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\irq.o: ..\src\rt_thread\include\rtservice.h
+.\objects\irq.o: ..\src\rt_thread\include\rtm.h
+.\objects\irq.o: ..\src\rt_thread\include\rtthread.h
