@@ -37,6 +37,8 @@
 //  <i>Default: 512
 #define RT_MAIN_THREAD_STACK_SIZE     512
 
+//using the rtthread finsh compoents
+#define RT_USING_FINSH
 // </h>
 
 // <h>Debug Configuration

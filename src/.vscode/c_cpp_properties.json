@@ -9,7 +9,8 @@
                 "_DEBUG",
                 "UNICODE",
                 "_UNICODE",
-                "USE_STDPERIPH_DRIVER"
+                "USE_STDPERIPH_DRIVER",
+                "STM32F10X_HD"
             ],
             "compilerPath": "E:\\mingw64\\bin\\gcc.exe",
             "cStandard": "c99",
