@@ -80,6 +80,7 @@ int msh_help(int argc, char **argv)
             rt_kprintf("%-16s - %s\n", &index->name[6], index->desc);
 #else
             rt_kprintf("%s ", &index->name[6]);
+            rt_kprintf("\n");
 #endif
         }
     }

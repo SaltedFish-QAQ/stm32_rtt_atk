@@ -39,6 +39,8 @@
 
 //using the rtthread finsh compoents
 #define RT_USING_FINSH
+#define FINSH_USING_DESCRIPTION
+#define FINSH_USING_SYMTAB
 // </h>
 
 // <h>Debug Configuration
