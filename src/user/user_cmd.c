@@ -74,6 +74,7 @@ static void printf_func(rt_uint8_t i)
         break;
     }
 }
+
 static void printf_xin() {
     float z,x,v,y0,ny,nx,nz,nd,d;
     rt_uint8_t index;
