@@ -16,17 +16,27 @@ static void hello_world(void)
 
 FINSH_FUNCTION_EXPORT_ALIAS(hello_world, __cmd_hello_world, RT-Thread say hello world!);
 
-static float f(float x, float y, float z) {
+static float f(float x, float y, float z)
+{
     float a;
+
     a = x * x + 9.0f / 4.0f * y * y + z * z - 1;
+
     return a * a * a - x * x * z * z * z - 9.0f / 80.0f * y * y * z * z * z;
 }
 
-static float h(float x, float z) {
+static float h(float x, float z)
+{
     float y;
+
     for ( y = 1.0f; y >= 0.0f; y -= 0.001f)
+    {
         if (f(x, y, z) <= 0.0f)
+        {
             return y;
+        }
+    }
+
     return 0.0f;
 }
 
@@ -74,14 +84,19 @@ static void printf_func(rt_uint8_t i)
         break;
     }
 }
-static void printf_xin() {
+
+static void printf_xin(void)
+{
     float z,x,v,y0,ny,nx,nz,nd,d;
     rt_uint8_t index;
 
-    for ( z = 1.5f; z > -1.5f; z -= 0.05f) {
-        for ( x = -1.5f; x < 1.5f; x += 0.025f) {
+    for ( z = 1.5f; z > -1.5f; z -= 0.05f)
+    {
+        for ( x = -1.5f; x < 1.5f; x += 0.025f)
+        {
              v = f(x, 0.0f, z);
-            if (v <= 0.0f) {
+            if (v <= 0.0f)
+            {
                  y0 = h(x, z);
                  ny = 0.01f;
                  nx = h(x + ny, z) - y0;
@@ -92,7 +107,9 @@ static void printf_xin() {
                  printf_func(index);
             }
             else
+            {
                 rt_kprintf(" ");
+            }
         }
         rt_kprintf("\n");
     }
