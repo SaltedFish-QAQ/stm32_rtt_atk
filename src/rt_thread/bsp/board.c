@@ -73,13 +73,18 @@ void rt_hw_board_init()
     /* System Tick Configuration */
     _SysTick_Config(SystemCoreClock / RT_TICK_PER_SECOND);
 #endif
-    /* 初始化SysTick */
-    SysTick_Config( SystemCoreClock / RT_TICK_PER_SECOND );
-
+    /* 初始化延时函数以供硬件驱动使用 */
+    delay_init();
+    /* 初始化LCD屏幕 */
+    LCD_Init();
     /* 初始化led硬件 */
     LED_GPIO_Config();
     /* 初始化串口模块硬件，波特率为115200 */
     USART_Config();
+
+    //rtt不提供精准的us以及ms延时，在系统初始化部分使用自己定义的us以及ms延时，系统硬件初始化完毕后，重新初始化rtt os时钟
+    /* 初始化SysTick */
+    SysTick_Config( SystemCoreClock / RT_TICK_PER_SECOND );
 #if 0
     //测试硬件是否工作
     GPIO_ResetBits(GPIOB, GPIO_Pin_5);

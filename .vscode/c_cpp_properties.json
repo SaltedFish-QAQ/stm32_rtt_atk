@@ -8,12 +8,10 @@
             "defines": [
                 "_DEBUG",
                 "UNICODE",
-                "_UNICODE",
-                "USE_STDPERIPH_DRIVER",
-                "STM32F10X_HD"
+                "_UNICODE"
             ],
             "compilerPath": "E:\\mingw64\\bin\\gcc.exe",
-            "cStandard": "c99",
+            "cStandard": "gnu17",
             "cppStandard": "gnu++14",
             "intelliSenseMode": "windows-gcc-x64"
         }
